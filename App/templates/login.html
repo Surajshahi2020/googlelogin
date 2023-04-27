@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Google Authentication</title> 
+</head> 
+<style> 
+.login-with-google { 
+background-color: #4CAF50; 
+padding: 10px 30px; 
+border-radius:20px; 
+padding: 10px 30px; 
+} 
+.login-with-google:hover { 
+background-color: white; 
+} 
+</style> 
+<body> 
+<button class="login-with-google"> 
+<a href="{% url 'social:begin' 'google-oauth2' %}?next={% url 'home' %}">Login
+with google</a> 
+</button> 
+</body> 
+</html> 
